@@ -25,7 +25,7 @@ constants/          → Shared constants (e.g., config values or static text)
 public/assets/      → Static assets like images and SVGs
 pages/              → Routing logic and page components
 styles/             → Global CSS and Tailwind configurations
-
+```
 ---
 
 

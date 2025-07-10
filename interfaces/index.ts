@@ -1,14 +1,13 @@
-// interfaces/index.ts
-
-export interface CardProps {
-  // Placeholder props for Card component
-  title: string;
-  imageUrl: string;
-  description?: string; // Optional for flexibility
+export interface ButtonProps {
+  label: string
+  onClick: () => void
+  variant?: 'primary' | 'secondary'
+  size?: 'sm' | 'md' | 'lg'
 }
 
-export interface ButtonProps {
-  // Placeholder props for Button component
-  label: string;
-  onClick?: () => void; // Optional click handler
+export interface CardProps {
+  image: string
+  title: string
+  description: string
+  price: number
 }
