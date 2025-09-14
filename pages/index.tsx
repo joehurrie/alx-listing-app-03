@@ -3,6 +3,7 @@ import { Quicksand, Source_Sans_3 } from "next/font/google";
 import Pill from "@/components/common/Pill";
 import { PROPERTYLISTINGSAMPLE } from "@/constants";
 
+
 const filters = [
   "All",
   "Top Villa",
@@ -28,7 +29,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Property Listings | OscarMike</title>
+        <title>Property Listings | Alx</title>
         <meta name="description" content="Find the best deals on luxury villas and curated stays around the world." />
         <link
           href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Source+Sans+3:wght@600&display=swap"
@@ -36,25 +37,25 @@ export default function Home() {
         />
       </Head>
 
-      {/* 🌄 Hero Section */}
+      {/* Hero Section */}
       <section
         className="w-full h-[480px] mt-[80px] rounded-[27px] bg-cover bg-center flex flex-col items-center justify-center text-center px-4"
         style={{ backgroundImage: 'url("/assets/ListingImages/heroImage.png")' }}
       >
         <h1
-          className={`text-[64px] md:text-[80px] lg:text-[94px] leading-tight text-white font-semibold ${sourceSansPro.className}`}
+          className={`text-[64px] md:text-[80px] lg:text-[94px] leading-tight text-[white] font-semibold ${sourceSansPro.className}`}
         >
           Find your favorite place here!
         </h1>
         <p
-          className={`text-[18px] md:text-[20px] lg:text-[24px] text-white mt-4 font-light ${quicksand.className}`}
+          className={`text-[18px] md:text-[20px] lg:text-[24px] text-[white] mt-4 font-light ${quicksand.className}`}
         >
           The best prices for over 2 million properties worldwide.
         </p>
       </section>
 
       {/* 🔍 Filter Section */}
-      <section className="mt-12 px-4 md:px-[60px] flex flex-col md:flex-row justify-between items-start md:items-center">
+      <section className="mt-[12px] px-4 md:px-[60px] flex flex-col md:flex-row justify-between items-start md:items-center">
         <div className="flex flex-wrap gap-3">
           {filters.map((label, index) => (
             <Pill key={index} label={label} />
